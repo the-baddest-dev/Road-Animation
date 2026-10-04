@@ -67,25 +67,52 @@ body{
   position: absolute;
   bottom: 520px;
   right: 1794px;
-  animation: airplane 8s linear;
+  animation: airplane 5s linear infinite forwards;
 }
+
+/* @keyframes airplane {
+  70% {
+    transform: translateX(1500px) translateY(0) rotate(0deg);
+  }
+
+  85% {
+    transform: translate(2200px, -50px) rotate(-5deg);
+  }
+
+
+  100% {
+    transform: translate(3000px, -50px) rotate(-5deg);
+  }
+} */
 
 @keyframes airplane {
   70%{
-    transform: translateX(1500px);
+    transform: translateX(1600px);
+    /* border: 2px solid green; */
+  }
+
+  75%{
+    transform: translate(1800px, -40px) rotate(-5deg);
   }
 
   80%{
-    transform: translate(1500px, 10px) rotate(-5deg);
-    animation-delay: -10s;
+    transform: translate(2000px, -40px) rotate(-5deg);
+    /* border: 2px solid red; */
+  }
+
+  85%{
+    transform: translate(2200px, -40px) rotate(-5deg);
   }
 
   90%{
-    transform: translate(3000px, 15px);
-    animation-delay: -10s;
+    transform: translate(2400px, -40px) rotate(-5deg);
+  }
+
+  95%{
+    transform: translate(2600px, -40px) rotate(-5deg);
   }
 
   100%{
-    /* transform: translate(1500px, -200px) rotate(-2deg); */
+    transform: translate(2800px, -40px) rotate(-5deg);
   }
 }
