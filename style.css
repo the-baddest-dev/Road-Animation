@@ -96,24 +96,50 @@ body{
   position: absolute;
   bottom: 50px;
   left:-550px;
-  animation: danfo 6s linear infinite;
+  animation: danfo 5s linear infinite;
 }
 
 @keyframes danfo {
   to{
-    transform: translateX(2500px);
+    transform: translateX(2400px);
   }
 }
 
 .couple{
   position: absolute;
   top: 500px;
-  right: 4000px;
-  animation: couple 8s linear infinite;
+  right: 2000px;
+  animation: couple 5s linear infinite 1s;
 }
 
 @keyframes couple {
   to{
-    transform: translateX(4700px);
+    transform: translateX(2500px);
+  }
+}
+
+.man{
+  position: absolute;
+  bottom: 70px;
+  right: 1820px;
+  animation: man 5s linear infinite 3s;
+}
+
+@keyframes man{
+  to{
+    transform: translateX(2500px);
+  }
+}
+
+.bus{
+  position: absolute;
+  bottom: 130px;
+  right: -480px;
+  animation: sqibus 5s linear infinite;
+}
+
+@keyframes sqibus{
+  to{
+    transform: translateX(-2500px);
   }
 }
