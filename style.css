@@ -94,7 +94,7 @@ body{
 
 .danfo-bus{
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left:-550px;
   animation: danfo 5s linear infinite;
 }
@@ -120,7 +120,7 @@ body{
 
 .man{
   position: absolute;
-  bottom: 70px;
+  bottom: 50px;
   right: 1820px;
   animation: man 5s linear infinite 3s;
 }
@@ -131,11 +131,25 @@ body{
   }
 }
 
+.bus2{
+  position: absolute;
+  bottom: 110px;
+  right: -480px;
+  animation: favorite-bus 5s linear infinite;
+  /* right: 800px; */
+}
+
+@keyframes favorite-bus{
+  to{
+    transform: translateX(-2500px);
+  }
+}
+
 .bus{
   position: absolute;
-  bottom: 130px;
+  bottom: 122px;
   right: -480px;
-  animation: sqibus 5s linear infinite;
+  animation: sqibus 5s linear infinite 1.5s;
 }
 
 @keyframes sqibus{
@@ -143,3 +157,46 @@ body{
     transform: translateX(-2500px);
   }
 }
+
+.bus3{
+  position: absolute;
+  bottom: 119px;
+  right: -480px;
+  animation: sqibus3 5s linear infinite 3s;
+}
+
+@keyframes sqibus3{
+  to{
+    transform: translateX(-2500px);
+  }
+}
+
+
+.bicycle{
+  position: absolute;
+  right: -458px;
+  top: 450px;
+  animation: bicycle 5s;
+}
+
+@keyframes bicycle {
+  to{
+    /* transform: translateX(-900px); */
+  }
+}
+
+.girl{
+  position: absolute;
+  bottom: -120px;
+  right: 1800px;
+  animation: girl 5s linear forwards;
+}
+
+@keyframes girl {
+  to{
+    transform: translateX(400px);
+  }
+}
+
+
+
