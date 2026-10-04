@@ -58,8 +58,8 @@ body{
 
 .sun{
   position: absolute;
-  bottom: 640px;
-  right:-110px;
+  bottom: 670px;
+  right:-130px;
 }
 
 .airplane{
@@ -67,52 +67,53 @@ body{
   position: absolute;
   bottom: 520px;
   right: 1794px;
-  animation: airplane 5s linear infinite forwards;
+  animation: airplane 5s linear infinite;
 }
 
-/* @keyframes airplane {
-  70% {
-    transform: translateX(1500px) translateY(0) rotate(0deg);
-  }
-
-  85% {
-    transform: translate(2200px, -50px) rotate(-5deg);
-  }
-
-
-  100% {
-    transform: translate(3000px, -50px) rotate(-5deg);
-  }
-} */
-
 @keyframes airplane {
-  70%{
-    transform: translateX(1600px);
+  40%{
     /* border: 2px solid green; */
+    transform: translateX(1000px);
   }
 
-  75%{
-    transform: translate(1800px, -40px) rotate(-5deg);
+  60%{
+    /* border: 2px solid yellow; */
+    transform: translate(1600px, -60px) rotate(-5deg);
   }
 
   80%{
-    transform: translate(2000px, -40px) rotate(-5deg);
     /* border: 2px solid red; */
-  }
-
-  85%{
-    transform: translate(2200px, -40px) rotate(-5deg);
-  }
-
-  90%{
-    transform: translate(2400px, -40px) rotate(-5deg);
-  }
-
-  95%{
-    transform: translate(2600px, -40px) rotate(-5deg);
+    transform: translate(2200px, -90px) rotate(-10deg);
   }
 
   100%{
-    transform: translate(2800px, -40px) rotate(-5deg);
+    /* border: 2px solid pink; */
+    transform: translate(2790px, -110px) rotate(-15deg);
+  }
+}
+
+.danfo-bus{
+  position: absolute;
+  bottom: 50px;
+  left:-550px;
+  animation: danfo 6s linear infinite;
+}
+
+@keyframes danfo {
+  to{
+    transform: translateX(2500px);
+  }
+}
+
+.couple{
+  position: absolute;
+  top: 500px;
+  right: 4000px;
+  animation: couple 8s linear infinite;
+}
+
+@keyframes couple {
+  to{
+    transform: translateX(4700px);
   }
 }
